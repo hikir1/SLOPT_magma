@@ -9,7 +9,8 @@ WORKDIR=./slopt-magma2
 REPEAT=10
 
 # [WORKERS]: number of worker threads (default: CPU cores)
-WORKERS=110
+#WORKERS=110
+WORKERS=8
 
 # [TIMEOUT]: time to run each campaign. This variable supports one-letter
 # suffixes to indicate duration (s: seconds, m: minutes, h: hours, d: days)

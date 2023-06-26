@@ -6,10 +6,11 @@
 WORKDIR=./slopt-magma
 
 # REPEAT: number of campaigns to run per program (per fuzzer)
-REPEAT=10
+REPEAT=8
 
 # [WORKERS]: number of worker threads (default: CPU cores)
-WORKERS=110
+#WORKERS=110
+WORKERS=8
 
 # [TIMEOUT]: time to run each campaign. This variable supports one-letter
 # suffixes to indicate duration (s: seconds, m: minutes, h: hours, d: days)
@@ -31,4 +32,5 @@ FUZZERS=(slopt)
 
 # [fuzzer_TARGETS]: an array of target names (from magma/targets/*) to fuzz with
 # `fuzzer` (default: all targets)
-slopt_TARGETS=(openssl php sqlite3)
+#slopt_TARGETS=(openssl php sqlite3)
+slopt_TARGETS=(openssl php sqlite3 poppler libpng libsndfile libtiff libxml2 lua)
